@@ -1,5 +1,8 @@
 {
- "name": "App",
+ "name": "schmuckli.dev",
+ "background_color": "#F5F5F5",
+ "theme_color": "#F5F5F5",
+ "display": "standalone",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
