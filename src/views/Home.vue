@@ -1,13 +1,32 @@
 <template>
   <v-container>
-    <h1>Welcome!</h1>
-    <div class="app_container">
+    <v-layout row wrap>
+      <v-flex xs6>
+      </v-flex>
+      <v-flex xs6 style="text-align:right;">
+        <v-icon @click="openCloseDashboard">keyboard_arrow_down</v-icon>
+      </v-flex>
+    </v-layout>
+    <div class="expandable" :style="dashboard_style">
       <v-layout row wrap>
-        <v-flex xs12 sm6 md4 lg3 v-for="app in apps" :key="app.key" style="padding:10px;">
-          <AppLink :name="app.name" :url="app.url" :app_icon="app.app_icon" :color="app.color" />
+        <v-flex xs6>
+          <h2>Dashboard</h2>
+
+        </v-flex>
+        <v-flex xs6 style="text-align:right;">
+          <h2>{{ hour }}:{{ minute }}</h2>
         </v-flex>
       </v-layout>
+      <div class="app_container">
+        <v-layout row wrap>
+          <v-flex xs12 sm6 md4 lg3 v-for="(app, index) in apps" :key="app.key" style="padding:10px;">
+            <AppLink :index="index" :name="app.name" :url="app.url" :app_icon="app.app_icon" :color="app.color" />
+          </v-flex>
+        </v-layout>
+      </div>
     </div>
+    <h1>Apps, built for the web</h1>
+    <p>Thanks to the power of progressive web apps, you can use all the apps in your browser.</p>
   </v-container>
 </template>
 <script>
@@ -32,16 +51,53 @@ export default {
           app_icon: "https://shoppinglist.schmuckli.dev/android-icon-192x192.png",
           color: "#24919B"
         }
-      ]
+      ],
+      hour: "",
+      minute: "",
+
+      dashboard_height: 0,
+      dashboard_opacity: 0
     }
   },
   components: {
     AppLink
+  },
+  mounted(){
+    this.startTime();
+  },
+  computed: {
+    dashboard_style() {
+      return "max-height: " + this.dashboard_height + "px;opacity: " + this.dashboard_opacity + ";";
+    }
+  },
+  methods: {
+    startTime(){
+      var global_this = this;
+      setInterval(function(){
+        var date = new Date();
+        global_this.minute = (date.getMinutes()+"").padStart(2, "0");
+        global_this.hour = (date.getHours()+"").padStart(2, "0");
+      }, 1000);
+    },
+    openCloseDashboard(){
+      if(this.dashboard_height === 0){
+        this.dashboard_height = 500;
+        this.dashboard_opacity = 1;
+      }else{
+        this.dashboard_height = 0;
+        this.dashboard_opacity = 0;
+      }
+    }
   }
 }
 </script>
 <style scoped>
 .app_container{
   margin-top: 30px;
+}
+.expandable{
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.3s;
 }
 </style>
