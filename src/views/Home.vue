@@ -5,35 +5,30 @@
         <span>Show all apps</span>
       </v-flex>
       <v-flex xs6 style="text-align:right;">
-        <v-icon>keyboard_arrow_down</v-icon>
+        <v-icon>{{ dashboard_open_icon }}</v-icon>
       </v-flex>
     </v-layout>
-    <div class="expandable" :style="dashboard_style">
-      <!--<v-layout row wrap>
-        <v-flex xs6>
-          <h2>Dashboard</h2>
-        </v-flex>
-        <v-flex xs6 style="text-align:right;">
-          <h2>{{ hour }}:{{ minute }}</h2>
-        </v-flex>
-      </v-layout>-->
+    <slide-up-down :active="isDashboardOpen" :duration="400">
       <div class="app_container">
         <v-layout row wrap>
           <v-flex xs12 sm6 md4 lg3 v-for="(app, index) in apps" :key="app.key" style="padding:10px;">
             <AppLink :index="index" :name="app.name" :url="app.url" :app_icon="app.app_icon" :color="app.color" />
           </v-flex>
-          <div style="height:300px;width:100%;"></div>
+          <div style="height:100px;width:100%;"></div>
         </v-layout>
       </div>
-    </div>
-    <div>
-      <h1>Apps, built for the web</h1>
-      <p>Thanks to the power of progressive web apps, you can use all the apps in your browser.</p>
-    </div>
+    </slide-up-down>
+    <Presentation />
   </v-container>
 </template>
 <script>
-import AppLink from "../components/AppLink";
+import Vue from "vue";
+import AppLink from "../components/dashboard/AppLink";
+import Presentation from "../components/presentation/Presentation";
+
+import SlideUpDown from 'vue-slide-up-down';
+
+Vue.component('slide-up-down', SlideUpDown);
 
 export default {
   name: "Home",
@@ -58,19 +53,19 @@ export default {
       hour: "",
       minute: "",
 
-      dashboard_height: 0,
-      dashboard_opacity: 0
+      isDashboardOpen: false
     }
   },
   components: {
-    AppLink
+    AppLink,
+    Presentation
   },
   mounted(){
     this.startTime();
   },
   computed: {
-    dashboard_style() {
-      return "max-height: " + this.dashboard_height + "px;opacity: " + this.dashboard_opacity + ";";
+    dashboard_open_icon(){
+      return !this.isDashboardOpen ? "keyboard_arrow_down" : "keyboard_arrow_up";
     }
   },
   methods: {
@@ -83,13 +78,7 @@ export default {
       }, 1000);
     },
     openCloseDashboard(){
-      if(this.dashboard_height === 0){
-        this.dashboard_height = 500;
-        this.dashboard_opacity = 1;
-      }else{
-        this.dashboard_height = 0;
-        this.dashboard_opacity = 0;
-      }
+      this.isDashboardOpen = !this.isDashboardOpen;
     }
   }
 }
@@ -98,12 +87,9 @@ export default {
 .app_container{
   margin-top: 30px;
 }
-.expandable{
-  max-height: 0;
-  opacity: 0;
-  transition: all 0.3s;
-}
 .dashboard_opener {
   color: grey;
+  cursor: pointer;
+  padding-bottom: 50px;
 }
 </style>

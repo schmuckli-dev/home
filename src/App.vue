@@ -1,12 +1,10 @@
 <template>
   <v-app>
-    <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>schmuckli.dev</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-    </v-toolbar>
-
+    <div class="container">
+      <h1 class="headline">
+        schmuckli.dev
+      </h1>
+    </div>
     <v-content>
       <router-view />
     </v-content>
@@ -25,3 +23,16 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.headline {
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.container {
+  flex: none;
+}
+</style>
