@@ -9,7 +9,7 @@
         <HighLightPoint title="Offline" color="red" description="All the apps can also be partly used offline. This allows it, to continue using the app, while you are not connected to the internet." icon="fal fa-wifi-slash" />
       </v-flex>
       <v-flex xs12 sm6 md3>
-        <HighLightPoint title="Installable" color="green" description="Install the apps you want to use simply on your homescreen." icon="fal fa-wifi-slash" />
+        <HighLightPoint title="Installable" color="green" description="Install the apps you want to use simply on your homescreen." icon="fal fa-download" />
       </v-flex>
     </v-layout>
   </div>
