@@ -1,32 +1,35 @@
 <template>
   <v-container>
-    <v-layout row wrap>
+    <v-layout class="dashboard_opener" row wrap @click="openCloseDashboard">
       <v-flex xs6>
+        <span>Show all apps</span>
       </v-flex>
       <v-flex xs6 style="text-align:right;">
-        <v-icon @click="openCloseDashboard">keyboard_arrow_down</v-icon>
+        <v-icon>keyboard_arrow_down</v-icon>
       </v-flex>
     </v-layout>
     <div class="expandable" :style="dashboard_style">
-      <v-layout row wrap>
+      <!--<v-layout row wrap>
         <v-flex xs6>
           <h2>Dashboard</h2>
-
         </v-flex>
         <v-flex xs6 style="text-align:right;">
           <h2>{{ hour }}:{{ minute }}</h2>
         </v-flex>
-      </v-layout>
+      </v-layout>-->
       <div class="app_container">
         <v-layout row wrap>
           <v-flex xs12 sm6 md4 lg3 v-for="(app, index) in apps" :key="app.key" style="padding:10px;">
             <AppLink :index="index" :name="app.name" :url="app.url" :app_icon="app.app_icon" :color="app.color" />
           </v-flex>
+          <div style="height:300px;width:100%;"></div>
         </v-layout>
       </div>
     </div>
-    <h1>Apps, built for the web</h1>
-    <p>Thanks to the power of progressive web apps, you can use all the apps in your browser.</p>
+    <div>
+      <h1>Apps, built for the web</h1>
+      <p>Thanks to the power of progressive web apps, you can use all the apps in your browser.</p>
+    </div>
   </v-container>
 </template>
 <script>
@@ -99,5 +102,8 @@ export default {
   max-height: 0;
   opacity: 0;
   transition: all 0.3s;
+}
+.dashboard_opener {
+  color: grey;
 }
 </style>
