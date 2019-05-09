@@ -27,6 +27,7 @@ import AppLink from "../components/dashboard/AppLink";
 import Presentation from "../components/presentation/Presentation";
 
 import SlideUpDown from 'vue-slide-up-down';
+import cookies from 'js-cookie';
 
 Vue.component('slide-up-down', SlideUpDown);
 
@@ -53,7 +54,7 @@ export default {
       hour: "",
       minute: "",
 
-      isDashboardOpen: false
+      isDashboardOpen: cookies.get("isDashboardOpen") === 'true' || false
     }
   },
   components: {
@@ -79,6 +80,7 @@ export default {
     },
     openCloseDashboard(){
       this.isDashboardOpen = !this.isDashboardOpen;
+      cookies.set("isDashboardOpen", this.isDashboardOpen, { expires: 365 * 10 });
     }
   }
 }
