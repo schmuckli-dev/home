@@ -8,7 +8,6 @@ import Terms from '@/views/Terms';
 Vue.use(Router);
 
 const router = new Router({
-  mode: 'history',
   routes: [
     {
       path: '*',
