@@ -21,3 +21,7 @@ footer a {
   color: white;
   text-decoration: none;
 }
+
+footer .flex {
+  margin-top: 20px;
+}

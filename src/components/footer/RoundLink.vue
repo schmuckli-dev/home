@@ -31,7 +31,12 @@ export default {
   height: 40px;
   font-size: 25px;
   color: white;
+  text-align: center;
   transition: all 0.3s;
+}
+.round_link > i {
+  font-size: 20px !important;
+  color: white;
 }
 .round_link:hover{
   background-color: white;
