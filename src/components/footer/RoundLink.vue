@@ -36,10 +36,14 @@ export default {
 }
 .round_link > i {
   font-size: 20px !important;
-  color: white;
+  color: white !important;
+  margin-bottom: 4px;
 }
 .round_link:hover{
   background-color: white;
   color: #232323;
+}
+.round_link:hover > i{
+  color: #232323 !important;
 }
 </style>

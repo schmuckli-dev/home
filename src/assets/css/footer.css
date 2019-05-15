@@ -1,0 +1,25 @@
+footer{
+  background: #232323;
+  padding-top: 10px;
+  min-height: 120px;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+@media (max-width:801px) {
+  footer .flex {
+    margin-top: 30px;
+  }
+}
+
+.footer_title {
+  font-weight: bolder;
+}
+
+.footer_content {
+  margin-top: 10px;
+  display: block;
+}

@@ -18,7 +18,7 @@ export default {
   },
   computed: {
     language() {
-      return getLanguage();
+      return this.$i18n.locale;
     }
   }
 }

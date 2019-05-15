@@ -9,19 +9,3 @@
 .container {
   flex: none;
 }
-
-footer{
-  background: #232323;
-  padding-top: 10px;
-  min-height: 120px;
-  color: white;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
-footer .flex {
-  margin-top: 20px;
-}
