@@ -1,0 +1,23 @@
+.headline {
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.container {
+  flex: none;
+}
+
+footer{
+  background: #232323;
+  padding-top: 10px;
+  min-height: 300px;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
