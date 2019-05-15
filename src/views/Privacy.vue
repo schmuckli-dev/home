@@ -6,8 +6,6 @@
   </v-container>
 </template>
 <script>
-import { getLanguage } from "./../translation";
-
 import PrivacyGerman from "../components/privacy/german";
 import PrivacyEnglish from "../components/privacy/english";
 

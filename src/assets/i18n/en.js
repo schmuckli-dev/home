@@ -4,5 +4,9 @@ export default {
   links: "Links",
   information: "Information",
   license: "License",
-  license_information: "All rights reserved. All product names, logos, and brands are property of their respective owners."
+  license_information: "All rights reserved. All product names, logos, and brands are property of their respective owners.",
+  language: "Language",
+
+  show_all_apps: "Show all apps",
+  apps_built_for_your_device: "Apps, built for your device"
 }

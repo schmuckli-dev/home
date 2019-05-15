@@ -23,3 +23,8 @@ footer a {
   margin-top: 10px;
   display: block;
 }
+
+.footer_container {
+  padding-left: 5px;
+  padding-right: 5px;
+}

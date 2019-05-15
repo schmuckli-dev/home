@@ -2,7 +2,7 @@
   <footer>
     <v-container>
       <v-layout row wrap>
-        <v-flex xs12 sm6 md4>
+        <v-flex xs12 sm6 md3>
           <div class="footer_container">
             <span class="footer_title">{{ $t("information") }}</span>
             <div class="footer_content">
@@ -12,25 +12,32 @@
             </div>
           </div>
         </v-flex>
-        <v-flex xs12 sm6 md4>
+        <v-flex xs12 sm6 md3>
           <div class="footer_container">
             <span class="footer_title">{{ $t("links") }}</span>
             <div class="footer_content">
               <RoundLink name="Github" icon="fab fa-github" link="https://www.github.com/schmuckli-dev" />
             </div>
-            <div class="footer_content">
-              <select v-model="$i18n.locale" @change="saveLanguageSelection">
-                <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">{{ lang }}</option>
-              </select>
-            </div>
           </div>
         </v-flex>
-        <v-flex xs12 sm6 md4>
+        <v-flex xs12 sm6 md3>
           <div class="footer_container">
             <span class="footer_title">{{ $t("license") }}</span>
             <div class="footer_content">
               <p>{{ year }} &copy; by schmuckli.dev</p>
               <p>{{ $t("license_information") }}</p>
+            </div>
+          </div>
+        </v-flex>
+        <v-flex xs12 sm6 md3>
+          <div class="footer_container">
+            <span class="footer_title">{{ $t("language") }}</span>
+            <div class="footer_content">
+              <v-select
+                :items="langs"
+                dark
+                v-model="$i18n.locale"
+              ></v-select>
             </div>
           </div>
         </v-flex>
@@ -62,7 +69,10 @@ export default {
   },
   data(){
     return {
-      langs: ['en', 'de']
+      langs: [
+        {text: 'English', value: 'en'},
+        {text: 'Deutsch', value: 'de'}
+      ]
     }
   },
   components: {
