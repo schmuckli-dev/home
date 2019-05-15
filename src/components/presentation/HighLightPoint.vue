@@ -44,9 +44,12 @@
   color: white;
   font-size: 50px;
 }
+p{
+  font-size: 17px;
+}
 h3{
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
 }
 .highlightpoint{
   text-align: center;

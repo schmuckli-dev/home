@@ -8,5 +8,7 @@ export default {
   language: "Sprache",
 
   show_all_apps: "Zeige alle Apps",
-  apps_built_for_your_device: "Apps, gemacht für dein Gerät"
+  apps_built_for_the_web: "Apps, gemacht für das Web",
+  apps_built_for_the_assistant: "Apps, gemacht für den Assistent",
+  assistant_description: "Ein paar Apps sind auch über den Google Assistant verfügbar. Beispielsweise ist es möglich, den Inhalt der Liste auch über den Assistant abzufragen."
 }

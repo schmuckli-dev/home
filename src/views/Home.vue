@@ -2,7 +2,7 @@
   <v-container>
     <v-layout class="dashboard_opener" row wrap @click="openCloseDashboard">
       <v-flex xs6>
-        <span>Show all apps</span>
+        <span>{{ $t("show_all_apps") }}</span>
       </v-flex>
       <v-flex xs6 style="text-align:right;">
         <v-icon>{{ dashboard_open_icon }}</v-icon>
