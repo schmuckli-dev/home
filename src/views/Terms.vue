@@ -1,8 +1,8 @@
 <template>
   <v-container>
-    <h2>Terms of service</h2>
-    <TermsGerman />
-    <TermsEnglish />
+    <h2>{{ $t("terms_of_service") }}</h2>
+    <TermsGerman v-if="language === 'de'" />
+    <TermsEnglish v-if="language === 'en'" />
   </v-container>
 </template>
 <script>
@@ -14,6 +14,11 @@ export default {
   components: {
     TermsGerman,
     TermsEnglish
+  },
+  computed: {
+    language() {
+      return this.$i18n.locale;
+    }
   }
 }
 </script>
