@@ -1,2 +1,2 @@
-# home
-This is the homescreen, which references to the services.
+# schmuckli.dev
+This website represents the apps and tools, created with Vue.js, Node.js and other frameworks.
