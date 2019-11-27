@@ -37,6 +37,13 @@ export default {
     return {
       apps: [
         {
+          key: "dashbboard",
+          name: "Dashboard",
+          url: "https://dashboard.schmuckli.dev/",
+          app_icon: "https://dashboard.schmuckli.dev/assets/logo/launcher_192.png",
+          color: "#00630A"
+        },
+        {
           key: "wallet",
           name: "Wallet",
           url: "https://wallet.schmuckli.dev/",
