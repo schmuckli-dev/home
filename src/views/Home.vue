@@ -41,7 +41,7 @@ export default {
           name: "Dashboard",
           url: "https://dashboard.schmuckli.dev/",
           app_icon: "https://dashboard.schmuckli.dev/assets/logo/launcher_192.png",
-          color: "#00630A"
+          color: "#9A2C41"
         },
         {
           key: "wallet",
