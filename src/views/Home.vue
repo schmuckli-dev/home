@@ -56,6 +56,13 @@ export default {
           url: "https://shoppinglist.schmuckli.dev/",
           app_icon: "https://shoppinglist.schmuckli.dev/android-icon-192x192.png",
           color: "#24919B"
+        },
+        {
+          key: "tasks",
+          name: "Tasks",
+          url: "https://tasks.schmuckli.dev/",
+          app_icon: "https://tasks.schmuckli.dev/android-icon-192x192.png",
+          color: "#2C439B"
         }
       ],
       hour: "",
