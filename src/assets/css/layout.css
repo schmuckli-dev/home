@@ -9,3 +9,8 @@
 .container {
   flex: none;
 }
+
+h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}

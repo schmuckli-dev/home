@@ -21,7 +21,7 @@ export default {
   },
   data(){
     return {
-      show: false
+      show: true
     }
   },
   computed: {
@@ -34,10 +34,10 @@ export default {
   },
   mounted(){
     //Fade animation effect on load
-    var global_this = this;
+    /*var global_this = this;
     setTimeout(function(){
       global_this.show = true;
-    }, 200 * (this.index + 1));
+    }, 200 * (this.index + 1));*/
   }
 }
 </script>

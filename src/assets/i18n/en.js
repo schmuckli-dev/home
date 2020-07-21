@@ -1,4 +1,6 @@
 export default {
+  slogan: "Building different tools for all screens.",
+  
   privacy_poliy: "Privacy policy",
   terms_of_service: "Terms of service",
   links: "Links",
@@ -7,8 +9,13 @@ export default {
   license_information: "All rights reserved. All product names, logos, and brands are property of their respective owners.",
   language: "Language",
 
-  show_all_apps: "Show all apps",
-  apps_built_for_the_web: "Apps, built for the web",
-  apps_built_for_the_assistant: "Apps, built for the assistant",
-  assistant_description: "A few apps are also available through the Google Assistant. For example, it is also possible to query the contents of the list via the assistant."
+  apps_built_for_you: "Apps built for you",
+  simple: "Simple",
+  simple_description: "All the apps are built from the ground up with a simple to use concept.",
+  availability: "Availability",
+  availability_description: "Use most of our apps on all your devices. It doesn't matter if it is your smartphone or laptop.",
+  privacy: "Privacy",
+  privacy_description: "We make sure, that all our apps are protected and respect your privacy at all time.",
+
+  app_library: "App library"
 }
