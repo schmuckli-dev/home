@@ -21,7 +21,9 @@
       </v-layout>
     </div>
     <v-content>
-      <router-view />
+      <transition name="fade">
+        <router-view />
+      </transition>
     </v-content>
     <Footer />
   </v-app>
