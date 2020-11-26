@@ -138,7 +138,7 @@
       completly stopp the app as a process in the system settings or uninstall
       it from your device. In order to process the raw tracking data, we upload
       your data to our servers. The data transfer is always safely encrypted via
-      HTTPS and using the latest security patterns to protect your data from
+      HTTPS and using the latest security technologies to protect your data from
       foreign attacks.
     </p>
     <p>&nbsp;</p>

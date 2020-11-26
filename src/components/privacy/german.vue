@@ -46,7 +46,7 @@
       die Anwendung als Prozess in den Systemeinstellungen vollständig stoppen oder deinstallieren
       es von Ihrem Gerät. Um die Tracking-Rohdaten zu verarbeiten, laden wir
       Ihre Daten auf unsere Server. Die Datenübertragung erfolgt immer sicher verschlüsselt über
-      HTTPS und Verwendung der neuesten Sicherheitsmuster zum Schutz Ihrer Daten vor
+      HTTPS und Verwendung der neuesten Sicherheitstechnologien zum Schutz Ihrer Daten vor
       ausländische Angriffe.</p>
     <p>&nbsp;</p>
     <h3>Dienste von Dritten</h3>
