@@ -36,6 +36,19 @@
     <p>Diese Website verwendet Cookies. Das sind kleine Textdateien, die es m&ouml;glich machen, auf dem Endger&auml;t des Nutzers spezifische, auf den Nutzer bezogene Informationen zu speichern, w&auml;hrend er die Website nutzt. Cookies erm&ouml;glichen es, insbesondere Nutzungsh&auml;ufigkeit und Nutzeranzahl der Seiten zu ermitteln, Verhaltensweisen der Seitennutzung zu analysieren, aber auch unser Angebot kundenfreundlicher zu gestalten. <!--Allg.Cookies-->Cookies bleiben &uuml;ber das Ende einer Browser-Sitzung gespeichert und k&ouml;nnen bei einem erneuten Seitenbesuch wieder aufgerufen werden. Wenn Sie das nicht w&uuml;nschen, sollten Sie Ihren Internetbrowser so einstellen, dass er die Annahme von Cookies verweigert.</p>
     <p>Ein genereller Widerspruch gegen den Einsatz der zu Zwecken des Onlinemarketing eingesetzten Cookies kann bei einer Vielzahl der Dienste, vor allem im Fall des Trackings, über die US-amerikanische Seite <a href="http://www.aboutads.info/choices/" target="_blank" rel="noopener">http://www.aboutads.info/choices/</a> oder die EU-Seite <a href="http://www.youronlinechoices.com/" target="_blank" rel="noopener">http://www.youronlinechoices.com/</a> erklärt werden. Des Weiteren kann die Speicherung von Cookies mittels deren Abschaltung in den Einstellungen des Browsers erreicht werden. Bitte beachten Sie, dass dann gegebenenfalls nicht alle Funktionen dieses Onlineangebotes genutzt werden können.</p>
     <p>&nbsp;</p>
+    <h3>Datenschutzerkl&auml;rung f&uuml;r Tracking Apps</h3>
+    <p>Einige Apps von schmuckli.dev (zum Beispiel die 'Tracky Companion') verwenden Verfolgungsfunktionen von Ihrem Gerät, die für die Bereitstellung
+      von neue Funktionen verwendet werden. Um Ihre Privatsphäre zu schützen, speichern wir Ihre Daten stets sicher ab, und wir werden diese Daten niemals weiterverkaufen, weiterverbreiten oder teilen
+      an andere Personen und/oder Organisationen.<br />
+      Mit Ihrem Einverständnis und Ihrer Zustimmung in der App beginnen wir mit der Verfolgung Ihres Standorts, auch wenn
+      im Hintergrund, wenn die App geschlossen ist und nicht verwendet wird. Sie können jederzeit
+      stoppen Sie die Verfolgung, indem Sie die Verfolgungsfunktion in der App selbst stoppen,
+      die Anwendung als Prozess in den Systemeinstellungen vollständig stoppen oder deinstallieren
+      es von Ihrem Gerät. Um die Tracking-Rohdaten zu verarbeiten, laden wir
+      Ihre Daten auf unsere Server. Die Datenübertragung erfolgt immer sicher verschlüsselt über
+      HTTPS und Verwendung der neuesten Sicherheitsmuster zum Schutz Ihrer Daten vor
+      ausländische Angriffe.</p>
+    <p>&nbsp;</p>
     <h3>Dienste von Dritten</h3>
     <p>Diese WebSite verwenden allenfalls Google Maps f&uuml;r das Einbetten von Karten, Google Invisible reCAPTCHA f&uuml;r den Schutz gegen Bots und Spam sowie YouTube f&uuml;r das Einbetten von Videos.</p>
     <p>Diese Dienste der amerikanischen Google LLC verwenden unter anderem Cookies und infolgedessen werden Daten an Google in den USA &uuml;bertragen, wobei wir davon ausgehen, dass in diesem Rahmen kein personenbezogenes Tracking allein durch die Nutzung unserer Website stattfindet.</p><p>Google hat sich verpflichtet, einen angemessenen Datenschutz gem&auml;ss dem amerikanisch-europ&auml;ischen und dem amerikanisch-schweizerischen Privacy Shield zu gew&auml;hrleisten.</p><p>Weitere Informationen finden sich in der <a href='https://policies.google.com/privacy?hl=de' target="_blank" rel="noopener">Datenschutzerkl&auml;rung von Google</a>.</p>
