@@ -30,12 +30,11 @@ export default {
     return {
       apps: [
         {
-          key: "dashbboard",
-          name: "Dashboard",
-          url: "https://dashboard.schmuckli.dev/",
-          app_icon:
-            "https://dashboard.schmuckli.dev/assets/logo/launcher_192.png",
-          color: "#9A2C41"
+          key: "timeful",
+          name: "Timeful",
+          url: "https://timeful.schmuckli.dev/",
+          app_icon: "https://timeful.schmuckli.dev/android-icon-192x192.png",
+          color: "#3BB361"
         },
         {
           key: "wallet",
@@ -65,6 +64,14 @@ export default {
           url: "https://tracky.schmuckli.dev/",
           app_icon: "https://tracky.schmuckli.dev/android-icon-192x192.png",
           color: "#FFB024"
+        },
+        {
+          key: "dashbboard",
+          name: "Dashboard",
+          url: "https://dashboard.schmuckli.dev/",
+          app_icon:
+            "https://dashboard.schmuckli.dev/assets/logo/launcher_192.png",
+          color: "#9A2C41"
         }
       ]
     };

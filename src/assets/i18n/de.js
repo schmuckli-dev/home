@@ -17,5 +17,5 @@ export default {
   privacy: "Datenschutz",
   privacy_description: "Wir stellen sicher, dass alle Apps sicher und deine Daten stets geschützt sind.",
 
-  app_library: "App Galerie"
+  app_library: "Apps"
 }
