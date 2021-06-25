@@ -30,6 +30,13 @@ export default {
     return {
       apps: [
         {
+          key: "translations",
+          name: "Translations",
+          url: "https://translations.schmuckli.dev/",
+          app_icon: "https://translations.schmuckli.dev/android-icon-192x192.png",
+          color: "#9CE0FF"
+        },
+        {
           key: "timeful",
           name: "Timeful",
           url: "https://timeful.schmuckli.dev/",
